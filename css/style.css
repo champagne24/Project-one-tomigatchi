@@ -1,0 +1,89 @@
+background{
+    background:url(intersection.png);
+}
+
+h3{
+    font-size: 24px;
+    text-align: center;
+    color: #0078E7;
+}
+
+.start-button{
+    margin:auto;
+    width: 75%;
+    padding:50px;
+}
+
+ #hunger{
+    list-style-type: none;
+    right: 100%;
+    padding: 25px;
+    float: right;
+    position: absolute;
+    width: 99px;
+    height: 28px;
+    left: 1329px;
+    top: 171px;
+    
+    }
+#exhaustion{
+    list-style-type: none;
+    right: 100%;
+    padding: 25px;
+    float: right;
+    position: absolute;
+    width: 145px;
+    height: 28px;
+    left: 1329px;
+    top: 271px;
+}
+#happiness{
+    list-style-type: none;
+    right: 100%;
+    padding: 25px;
+    float: right;
+    position: absolute;
+    width: 154px;
+    height: 28px;
+    left: 1329px;
+    top: 371px;
+}
+
+form{
+    position: absolute;
+    width: 291px;
+    height: 126px;
+    left: 700px;
+    top: 500px;
+}
+
+.start-button{
+    position: absolute;
+    width: 291px;
+    height: 126px;
+    left: 700px;
+    top: 510px; 
+}
+
+#feed{
+    position: absolute;
+    width: 76px;
+    height: 45px;
+    left: 165px;
+    top: 171px;
+}
+
+#play{
+    position: absolute;
+    width: 76px;
+    height: 45px;
+    left: 165px;
+    top: 271px;
+}
+#nap{
+    position: absolute;
+    width: 76px;
+    height: 45px;
+    left: 165px;
+    top: 371px;
+}
