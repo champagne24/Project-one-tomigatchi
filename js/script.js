@@ -1,14 +1,13 @@
 
-let player= function (){
-    this.name= ""
-    this.hunger= 20
-    this.exhaustion= 20
-    this.happiness= 20
-    this.age = 0
-    
+let player= {
+    name:'',
+    hunger:20,
+    exhaustion: 20,
+    happiness: 20,
+    age : 0,
 }
 // time
-let time=0
+let time= 0;
 
 
 //buttons
@@ -30,21 +29,32 @@ function gameStart(event) {
     event.preventDefault();
     hide();
     player.name = $('.username').val();
-    $('.username').text(player.name);
-    play();
+    $('.playername').text(player.name);
+    begin();
 }
 
-//hide 
 function hide(){
-    document.getElementByClass('startButton').style.display='none';
+    document.getElementByID('start').style.display='none';
 }
+
+
+// action buttons
+$('#feed').click(function() { $(player.hunger).click()
+});
+
+$('#play').click(function() { $(player.exhaustion).click()
+});
+
+$('#nap').click(function() { $(player.happiness).click()
+});
 
 
 
 
 function playAgain(event){
     event.preventDefault();
-    if(this.id=='hunger')
+   
+
     user.hunger= 5
 }
 function win(){
