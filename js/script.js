@@ -1,26 +1,61 @@
 
-let player={
-    name:"",
-    hunger:"20",
-    exhaustion:"20",
-    happiness:"20",
+let player= function (){
+    this.name= ""
+    this.hunger= 20
+    this.exhaustion= 20
+    this.happiness= 20
+    this.age = 0
+    
 }
-// dom elements
-
-let feed= document.querySelector("#feed");
-let play= document.querySelector("#play");
-let nap= document.querySelector("nap");
+// time
+let time=0
 
 
-let hungerStat= document.querySelector('#hunger');
-let exhaustionStat= document.querySelector("#exhaustion");
-let happinessStat= document.querySelector('#happiness');
+//buttons
+
+const feed= $("#feed");
+const play= $("#play");
+const nap= $("nap");
+const startButton = $(".start-button");
 
 
-let gameStart = document.querySelector(".start-button");
-let userName= document.querySelector(".username");
-let restartButton=document.querySelector('#restart');
+//status
+const hungerStat= $('#hunger');
+const exhaustionStat= $("#exhaustion");
+const happinessStat= $('#happiness');
 
 
-gameStart.addEventListener("click", start)
 
+function gameStart(event) {
+    event.preventDefault();
+    hide();
+    player.name = $('.username').val();
+    $('.username').text(player.name);
+    play();
+}
+
+//hide 
+function hide(){
+    document.getElementByClass('startButton').style.display='none';
+}
+
+
+
+
+function playAgain(event){
+    event.preventDefault();
+    if(this.id=='hunger')
+    user.hunger= 5
+}
+function win(){
+    $('.start-button').style.display='flex';
+    playAgain();
+}
+
+function lose(){
+    $('.start-button').style.display='flex';
+    playAgain()
+}
+
+
+startButton.on('submit',gameStart)
