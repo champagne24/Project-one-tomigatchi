@@ -1,5 +1,5 @@
-background{
-    background:url(intersection.png);
+body{
+    background: url(intersection.png);
 }
 
 h3{
@@ -12,6 +12,7 @@ h3{
     margin:auto;
     width: 75%;
     padding:50px;
+    
 }
 
  #hunger{
@@ -22,7 +23,7 @@ h3{
     position: absolute;
     width: 99px;
     height: 28px;
-    left: 1329px;
+    left: 1429px;
     top: 171px;
     
     }
@@ -34,7 +35,7 @@ h3{
     position: absolute;
     width: 145px;
     height: 28px;
-    left: 1329px;
+    left: 1429px;
     top: 271px;
 }
 #happiness{
@@ -45,7 +46,7 @@ h3{
     position: absolute;
     width: 154px;
     height: 28px;
-    left: 1329px;
+    left: 1429px;
     top: 371px;
 }
 
@@ -53,7 +54,7 @@ form{
     position: absolute;
     width: 291px;
     height: 126px;
-    left: 700px;
+    left: 900px;
     top: 500px;
 }
 
@@ -61,7 +62,7 @@ form{
     position: absolute;
     width: 291px;
     height: 126px;
-    left: 700px;
+    left: 900px;
     top: 510px; 
 }
 
