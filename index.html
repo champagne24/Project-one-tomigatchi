@@ -13,8 +13,9 @@
         <title>Project one</title>
     </head>
     <body>
-        
-        <h3>Name:</h3>
+        <section>
+           <class="petname"> Name:
+        </section>
         
         <div class='action-buttons'>
             <button id="feed">Feed</button>
@@ -24,21 +25,23 @@
 
         <div class='stats'>
             <ul>
-                <li id="hunger">Hunger 20</li>
-                <li id="exhaustion">Exhaustion 20</li>
-                <li id="happiness">Happiness 20</li>
+                <li id="hunger">Hunger 10</li>
+                <li id="exhaustion">Exhaustion 0</li>
+                <li id="happiness">Happiness 10</li>
 
             </ul>
         </div>
-        
+
         <form>
-            <input type="text" placeholder="type your name" />
+            <div class="username"><input type="text" placeholder="Name" /></div>
         </form>    
 
         <div class=start-button>
             <button id="start">Start</button>
         </div>
-
+        
+            <img id='pet' class='first' src="" alt="pet-image">
+        
 
         <script src="js/script.js" defer></script>
     </body>
