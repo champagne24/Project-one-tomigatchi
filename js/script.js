@@ -1,14 +1,11 @@
 
 let player= {
-    name:'',
-    hunger:20,
-    exhaustion: 20,
-    happiness: 20,
+    name:"",
+    hunger:10,
+    exhaustion: 0,
+    happiness: 10,
     age : 0,
 }
-// time
-let time= 0;
-
 
 //buttons
 
@@ -20,16 +17,15 @@ const startButton = $(".start-button");
 
 //status
 const hungerStat= $('#hunger');
-const exhaustionStat= $("#exhaustion");
+const exhaustionStat= $('#exhaustion');
 const happinessStat= $('#happiness');
 
 
-
-function gameStart(event) {
-    event.preventDefault();
+function gameStart(e) {
+    e.preventDefault();
     hide();
     player.name = $('.username').val();
-    $('.playername').text(player.name);
+    $('.petname').text(player.name);
     begin();
 }
 
@@ -49,23 +45,28 @@ $('#nap').click(function() { $(player.happiness).click()
 });
 
 
-
+function begin(){
+    $('start-button').style('background-image', 'url(intersection.png')
+    hungerMax(hungerStat, 20);
+    exhaustionMax(exhaustionStat,20);
+    happinessMax(happinessStat, 20);
+}
 
 function playAgain(event){
     event.preventDefault();
    
 
-    user.hunger= 5
+    
 }
 function win(){
-    $('.start-button').style.display='flex';
+    document.getElementByID('start').style.display='flex';
     playAgain();
 }
 
 function lose(){
-    $('.start-button').style.display='flex';
+    document.getElementByID('start').style.display='flex';
     playAgain()
 }
 
 
-startButton.on('submit',gameStart)
+startButton.on('submit', gameStart)
