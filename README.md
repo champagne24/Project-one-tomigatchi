@@ -11,5 +11,7 @@ Must keep your player from reaching 20 hunger, 20 hunger and 0 happiness. If you
 Wireframes 
 /Users/champagne/seirfx119/unit-one/deliverables/Project-one-tomigatchi/Images/wireframe.png
 The wireframe is also in the images.
-Below is tj
+
+
+Below is the link for the website
 http://127.0.0.1:5500/index.html?
