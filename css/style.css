@@ -1,8 +1,7 @@
 body{
-    background: url(intersection.png);
+    background-image: url('..intersection.png');
 }
-
-h3{
+h4 {
     font-size: 24px;
     text-align: center;
     color: #0078E7;
@@ -12,7 +11,18 @@ h3{
     margin:auto;
     width: 75%;
     padding:50px;
-    
+
+}
+#age{
+    list-style-type: none;
+    right: 100%;
+    padding: 25px;
+    float: right;
+    position: absolute;
+    width: 99px;
+    height: 28px;
+    left: 1429px;
+    top: 101px;
 }
 
  #hunger{
@@ -54,16 +64,18 @@ form{
     position: absolute;
     width: 291px;
     height: 126px;
-    left: 900px;
+    left: 790px;
     top: 500px;
+    display:flex;
 }
 
 .start-button{
     position: absolute;
     width: 291px;
     height: 126px;
-    left: 900px;
+    left: 790px;
     top: 510px; 
+    
 }
 
 #feed{
@@ -72,6 +84,7 @@ form{
     height: 45px;
     left: 165px;
     top: 171px;
+    cursor: pointer;
 }
 
 #play{
@@ -80,6 +93,7 @@ form{
     height: 45px;
     left: 165px;
     top: 271px;
+    cursor: pointer;
 }
 #nap{
     position: absolute;
@@ -87,4 +101,22 @@ form{
     height: 45px;
     left: 165px;
     top: 371px;
+    cursor: pointer;
+}
+#start{
+    display:flex
+}
+
+.tamagotchi{
+    display:none;
+    width:20px;
+    height:25px;
+}
+.show{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hide{
+    visibility: hidden;
 }
