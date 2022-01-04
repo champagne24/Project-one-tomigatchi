@@ -13,5 +13,5 @@ Wireframes
 The wireframe is also in the images.
 
 
-Below is the link for the website
+This is the link for the website
 http://127.0.0.1:5500/index.html?
