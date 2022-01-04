@@ -110,5 +110,8 @@ const buttons= function buttons(e) {
         gameStart()
     }
 }
-
+feedButton.addEventListener('click',e => playerAction('feeding'))
+playButton.addEventListener('click',e => playerAction('playing'))
+napButton.addEventListener('click', e => playerAction('napping'))
+startBut.addEventListener('click',e => playerAction('start'))
 
